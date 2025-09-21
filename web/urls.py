@@ -7,10 +7,10 @@ from .views import NetworkNodeViewSet, ProductViewSet, ContactViewSet
 app_name = WebConfig.name
 
 router = DefaultRouter()
-router.register(r'network-nodes', NetworkNodeViewSet)
-router.register(r'products', ProductViewSet)
-router.register(r'contacts', ContactViewSet)
+router.register(r"network-nodes", NetworkNodeViewSet)
+router.register(r"products", ProductViewSet)
+router.register(r"contacts", ContactViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path("api/", include(router.urls)),
 ]
